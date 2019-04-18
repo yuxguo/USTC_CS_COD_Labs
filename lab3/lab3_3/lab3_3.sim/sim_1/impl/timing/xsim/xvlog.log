@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.sim/sim_1/impl/timing/xsim/FIFO_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-311] analyzing module Reg_File
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module clock_500hz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sim_1/new/FIFO_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_tb

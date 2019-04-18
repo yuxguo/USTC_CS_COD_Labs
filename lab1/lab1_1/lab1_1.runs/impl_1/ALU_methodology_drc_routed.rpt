@@ -1,0 +1,45 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Mar 20 19:16:47 2019
+| Host         : DESKTOP-BKSDDJC running 64-bit major release  (build 9200)
+| Command      : report_methodology -file ALU_methodology_drc_routed.rpt -pb ALU_methodology_drc_routed.pb -rpx ALU_methodology_drc_routed.rpx
+| Design       : ALU
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 2
++-----------+----------+-------------------+------------+
+| Rule      | Severity | Description       | Violations |
++-----------+----------+-------------------+------------+
+| TIMING-20 | Warning  | Non-clocked latch | 2          |
++-----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch flag1_reg cannot be properly analyzed as its control pin flag1_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch flag2_reg cannot be properly analyzed as its control pin flag2_reg/G is not reached by a timing clock
+Related violations: <none>
+
+

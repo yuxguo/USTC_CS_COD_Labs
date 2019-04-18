@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Mar 26 16:06:18 2019
+# Process ID: 12812
+# Current directory: D:/gyx_uni/2_spring/cod/lab/lab1/lab1_3_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10752 D:\gyx_uni\2_spring\cod\lab\lab1\lab1_3_2\lab1_3_2.xpr
+# Log file: D:/gyx_uni/2_spring/cod/lab/lab1/lab1_3_2/vivado.log
+# Journal file: D:/gyx_uni/2_spring/cod/lab/lab1/lab1_3_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/gyx_uni/2_spring/cod/lab/lab1/lab1_3_2/lab1_3_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 843.020 ; gain = 124.195
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 26 16:06:54 2019...

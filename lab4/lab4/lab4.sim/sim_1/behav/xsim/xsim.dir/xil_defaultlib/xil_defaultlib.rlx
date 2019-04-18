@@ -1,0 +1,14 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sim_1/new/TOP_tb.v,1555227461,verilog,,,,TOP_tb,,,../../../../lab4.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sources_1/ip/VRAM/sim/VRAM.v,1555119075,verilog,,D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v,,VRAM,,,../../../../lab4.srcs/sources_1/ip/clk_wiz_0,,,,,
+,,,,,,clk_wiz_0;clk_wiz_0_clk_wiz_0_clk_wiz,,,,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sources_1/new/TOP.v,1555144518,verilog,,D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sources_1/new/clock_5hz.v,,TOP,,,../../../../lab4.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sources_1/new/clock_5hz.v,1555120025,verilog,,D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sources_1/new/control_paint.v,,clock_5hz,,,../../../../lab4.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sources_1/new/control_paint.v,1555130536,verilog,,D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sources_1/new/get_data.v,,control_paint,,,../../../../lab4.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sources_1/new/get_data.v,1555138819,verilog,,D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sources_1/new/mask.v,,get_data,,,../../../../lab4.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sources_1/new/mask.v,1555145945,verilog,,D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sources_1/new/vga.v,,mask,,,../../../../lab4.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sources_1/new/vga.v,1555144432,verilog,,D:/gyx_uni/2_spring/cod/lab/lab4/lab4/lab4.srcs/sim_1/new/TOP_tb.v,,vga,,,../../../../lab4.srcs/sources_1/ip/clk_wiz_0,,,,,

@@ -1,0 +1,1320 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Apr  7 10:39:48 2019
+# Process ID: 12708
+# Current directory: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8940 D:\gyx_uni\2_spring\cod\lab\lab3\lab3_3\lab3_3.xpr
+# Log file: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/vivado.log
+# Journal file: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 852.441 ; gain = 143.508
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FIFO
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 986.020 ; gain = 106.609
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock_500hz' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_500hz' (2#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (3#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'ra0' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:142]
+WARNING: [Synth 8-689] width (4) of port connection 'ra1' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:142]
+WARNING: [Synth 8-689] width (4) of port connection 'wa' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:142]
+INFO: [Synth 8-6157] synthesizing module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_decoder' (4#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'bits' does not match port width (3) of module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (5#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+WARNING: [Synth 8-3331] design clock_500hz has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1027.066 ; gain = 147.656
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1027.066 ; gain = 147.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1027.066 ; gain = 147.656
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'U1'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1385.141 ; gain = 505.730
+20 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1385.141 ; gain = 505.730
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr  7 10:41:48 2019] Launched synth_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/synth_1/runme.log
+[Sun Apr  7 10:41:48 2019] Launched impl_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B53BA
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FIFO
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2033.730 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock_500hz' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_500hz' (2#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (3#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'ra0' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:148]
+WARNING: [Synth 8-689] width (4) of port connection 'ra1' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:148]
+INFO: [Synth 8-6157] synthesizing module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_decoder' (4#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'bits' does not match port width (3) of module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:153]
+WARNING: [Synth 8-6014] Unused sequential element addr_in_reg was removed.  [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (5#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+WARNING: [Synth 8-3331] design clock_500hz has unconnected port rst
+WARNING: [Synth 8-3331] design FIFO has unconnected port in[3]
+WARNING: [Synth 8-3331] design FIFO has unconnected port in[2]
+WARNING: [Synth 8-3331] design FIFO has unconnected port in[1]
+WARNING: [Synth 8-3331] design FIFO has unconnected port in[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2033.730 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2033.730 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2033.730 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'U1'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2130.434 ; gain = 96.703
+19 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2130.434 ; gain = 96.703
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Apr  7 10:51:41 2019] Launched synth_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Apr  7 10:52:21 2019] Launched impl_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr  7 10:53:47 2019] Launched impl_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B53BA
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2186.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock_500hz' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_500hz' (2#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (3#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'ra0' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:149]
+WARNING: [Synth 8-689] width (4) of port connection 'ra1' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:149]
+INFO: [Synth 8-6157] synthesizing module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_decoder' (4#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'bits' does not match port width (3) of module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:154]
+WARNING: [Synth 8-6014] Unused sequential element addr_in_reg was removed.  [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (5#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+WARNING: [Synth 8-3331] design clock_500hz has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2186.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2186.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2186.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'U1'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2237.117 ; gain = 50.430
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr  7 10:56:14 2019] Launched synth_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/synth_1/runme.log
+[Sun Apr  7 10:56:14 2019] Launched impl_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B53BA
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FIFO
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2237.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock_500hz' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_500hz' (2#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (3#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'ra0' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:152]
+WARNING: [Synth 8-689] width (4) of port connection 'ra1' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:152]
+INFO: [Synth 8-6157] synthesizing module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_decoder' (4#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'bits' does not match port width (3) of module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:157]
+WARNING: [Synth 8-6014] Unused sequential element addr_in_reg was removed.  [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (5#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+WARNING: [Synth 8-3331] design clock_500hz has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2237.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2237.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2237.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'U1'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2242.059 ; gain = 4.941
+19 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2242.059 ; gain = 4.941
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FIFO
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2242.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock_500hz' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_500hz' (2#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (3#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'ra0' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:150]
+WARNING: [Synth 8-689] width (4) of port connection 'ra1' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:150]
+INFO: [Synth 8-6157] synthesizing module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_decoder' (4#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'bits' does not match port width (3) of module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:155]
+WARNING: [Synth 8-6014] Unused sequential element addr_in_reg was removed.  [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:97]
+WARNING: [Synth 8-6014] Unused sequential element reg_clk_reg was removed.  [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (5#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+WARNING: [Synth 8-3331] design clock_500hz has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2242.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2242.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2242.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'U1'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2248.637 ; gain = 6.578
+19 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2248.637 ; gain = 6.578
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr  7 11:05:33 2019] Launched synth_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/synth_1/runme.log
+[Sun Apr  7 11:05:33 2019] Launched impl_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B53BA
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2248.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock_500hz' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_500hz' (2#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (3#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'ra0' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:143]
+WARNING: [Synth 8-689] width (4) of port connection 'ra1' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:143]
+INFO: [Synth 8-6157] synthesizing module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_decoder' (4#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'bits' does not match port width (3) of module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:148]
+WARNING: [Synth 8-6014] Unused sequential element addr_in_reg was removed.  [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:97]
+WARNING: [Synth 8-6014] Unused sequential element reg_clk_reg was removed.  [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (5#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+WARNING: [Synth 8-3331] design clock_500hz has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2248.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2248.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2248.637 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'U1'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2250.313 ; gain = 1.676
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr  7 11:11:56 2019] Launched synth_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/synth_1/runme.log
+[Sun Apr  7 11:11:56 2019] Launched impl_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B53BA
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: FIFO
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2250.313 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock_500hz' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_500hz' (2#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (3#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'ra0' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:143]
+WARNING: [Synth 8-689] width (4) of port connection 'ra1' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:143]
+INFO: [Synth 8-6157] synthesizing module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_decoder' (4#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'bits' does not match port width (3) of module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:148]
+WARNING: [Synth 8-6014] Unused sequential element addr_in_reg was removed.  [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:97]
+WARNING: [Synth 8-6014] Unused sequential element reg_clk_reg was removed.  [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (5#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+WARNING: [Synth 8-3331] design clock_500hz has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2250.313 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2250.313 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2250.313 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'U1'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2261.449 ; gain = 11.137
+19 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2261.449 ; gain = 11.137
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr  7 11:21:50 2019] Launched synth_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/synth_1/runme.log
+[Sun Apr  7 11:21:50 2019] Launched impl_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B53BA
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2261.449 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (1#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2261.449 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2261.449 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2261.449 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk_in'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_out'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'en_in'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in[0]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in[1]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in[2]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in[3]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'empty'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'full'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_in[0]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_in[1]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_in[2]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'addr_in[3]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[0]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[1]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[2]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out[3]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[8]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[9]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[10]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[11]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[12]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[13]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[14]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[15]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[0]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[1]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[2]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[3]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[4]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[5]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[6]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'display[7]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2265.551 ; gain = 4.102
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2265.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock_500hz' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_500hz' (2#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (3#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'ra0' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:144]
+WARNING: [Synth 8-689] width (4) of port connection 'ra1' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:144]
+INFO: [Synth 8-6157] synthesizing module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_decoder' (4#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'bits' does not match port width (3) of module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:149]
+WARNING: [Synth 8-6014] Unused sequential element reg_clk_reg was removed.  [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (5#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+WARNING: [Synth 8-3331] design clock_500hz has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2265.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2265.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2265.551 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'U1'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2281.250 ; gain = 15.699
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr  7 11:28:14 2019] Launched synth_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/synth_1/runme.log
+[Sun Apr  7 11:28:14 2019] Launched impl_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B53BA
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2281.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock_500hz' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_500hz' (2#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (3#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'ra0' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:136]
+WARNING: [Synth 8-689] width (4) of port connection 'ra1' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:136]
+INFO: [Synth 8-6157] synthesizing module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_decoder' (4#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'bits' does not match port width (3) of module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (5#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+WARNING: [Synth 8-3331] design clock_500hz has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2281.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2281.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2281.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'U1'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2290.266 ; gain = 9.016
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr  7 11:34:57 2019] Launched synth_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/synth_1/runme.log
+[Sun Apr  7 11:34:57 2019] Launched impl_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B53BA
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2290.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock_500hz' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_500hz' (2#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (3#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'ra0' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:133]
+WARNING: [Synth 8-689] width (4) of port connection 'ra1' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:133]
+INFO: [Synth 8-6157] synthesizing module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_decoder' (4#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'bits' does not match port width (3) of module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:138]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (5#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+WARNING: [Synth 8-3331] design clock_500hz has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2290.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2290.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2290.266 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'U1'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+WARNING: [Vivado 12-584] No ports matched 'addr_in[3]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:42]
+Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/FIFO_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2301.711 ; gain = 11.445
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr  7 11:41:23 2019] Launched synth_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/synth_1/runme.log
+[Sun Apr  7 11:41:23 2019] Launched impl_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B53BA
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+export_ip_user_files -of_objects  [get_files D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/STATE_MACHINE.v] -no_script -reset -force -quiet
+remove_files  D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/STATE_MACHINE.v
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2301.711 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/.Xil/Vivado-12708-DESKTOP-BKSDDJC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock_500hz' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_500hz' (2#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/clock_500hz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (3#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/Reg_File.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'ra0' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:116]
+WARNING: [Synth 8-689] width (4) of port connection 'ra1' does not match port width (3) of module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:116]
+INFO: [Synth 8-6157] synthesizing module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_decoder' (4#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/bcd_decoder.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'bits' does not match port width (3) of module 'bcd_decoder' [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (5#1) [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/new/FIFO.v:23]
+WARNING: [Synth 8-3331] design clock_500hz has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2301.711 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2301.711 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2301.711 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'U1'
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+WARNING: [Vivado 12-584] No ports matched 'addr_in[3]'. [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc:42]
+Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/FIFO_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2311.344 ; gain = 9.633
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'U1/inst'
+Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'U1/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FIFO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FIFO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.srcs/constrs_1/new/nexys4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Apr  7 11:46:43 2019] Launched synth_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/synth_1/runme.log
+[Sun Apr  7 11:46:43 2019] Launched impl_1...
+Run output will be captured here: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B53BA
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab3/lab3_3/lab3_3.runs/impl_1/FIFO.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  7 11:50:18 2019...

@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../lab4.srcs/sources_1/ip/clk_wiz_0" \
+"TOP_tb_time_impl.v" \
+"../../../../../lab4.srcs/sim_1/new/TOP_tb.v" \
+
+# Do not sort compile order
+nosort

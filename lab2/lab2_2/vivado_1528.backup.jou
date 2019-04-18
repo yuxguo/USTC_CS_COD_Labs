@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Mar 28 16:24:48 2019
+# Process ID: 1528
+# Current directory: D:/gyx_uni/2_spring/cod/lab/lab2/lab2_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13552 D:\gyx_uni\2_spring\cod\lab\lab2\lab2_2\lab2_2.xpr
+# Log file: D:/gyx_uni/2_spring/cod/lab/lab2/lab2_2/vivado.log
+# Journal file: D:/gyx_uni/2_spring/cod/lab/lab2/lab2_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/gyx_uni/2_spring/cod/lab/lab2/lab2_2/lab2_2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source DIV_tb.tcl
+close_sim
+launch_simulation
+source DIV_tb.tcl
+synth_design -rtl -name rtl_1
+write_schematic -format pdf -orientation portrait C:/Users/65767/Desktop/schematic.pdf
+close_sim

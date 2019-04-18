@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Apr  3 20:14:31 2019
+# Process ID: 2276
+# Current directory: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_1/lab3_1.runs/impl_1
+# Command line: vivado.exe -log Reg_File.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Reg_File.tcl -notrace
+# Log file: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_1/lab3_1.runs/impl_1/Reg_File.vdi
+# Journal file: D:/gyx_uni/2_spring/cod/lab/lab3/lab3_1/lab3_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Reg_File.tcl -notrace
