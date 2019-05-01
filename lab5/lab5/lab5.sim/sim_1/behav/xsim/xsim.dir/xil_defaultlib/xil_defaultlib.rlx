@@ -1,0 +1,22 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sim_1/new/CPU_tb.v,1556724675,verilog,,,,CPU_tb,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/ip/MEM/sim/MEM.v,1556727909,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v,,MEM,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v,1556440147,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/ALU.v,,clk_wiz_0;clk_wiz_0_clk_wiz_0_clk_wiz;glbl,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/ALU.v,1556677261,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/Control_Unit.v,,ALU,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/CPU.v,1556724279,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/MUX_2_6bits.v,,CPU,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/Control_Unit.v,1556721410,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/DDU.v,,Control_Unit,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/DDU.v,1556709393,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/Mux_2.v,,DDU,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/MUX_2_6bits.v,1556674551,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/SignExtend_Unit.v,,Mux_2_5bits,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/Mux_2.v,1556670077,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/Mux_4.v,,Mux_2,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/Mux_4.v,1556670350,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/RegFile.v,,Mux_4,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/RegFile.v,1556723719,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/Register.v,,Reg_File,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/Register.v,1556714531,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/State_Machine.v,,Register,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/SignExtend_Unit.v,1556678492,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/clock_5hz.v,,SignExtend_Unit,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/State_Machine.v,1556714473,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/TOP.v,,State_Machine,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/TOP.v,1556709713,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/bcd_decoder.v,,TOP,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/bcd_decoder.v,1556728109,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/clock_500hz.v,,bcd_decoder,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/clock_500hz.v,1556440473,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/CPU.v,,clock_500hz,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sources_1/new/clock_5hz.v,1556697974,verilog,,D:/gyx_uni/2_spring/cod/lab/lab5/lab5/lab5.srcs/sim_1/new/CPU_tb.v,,clock_5hz,,,../../../../lab5.srcs/sources_1/ip/clk_wiz_0,,,,,

@@ -1,0 +1,110 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu May  2 01:09:33 2019
+| Host         : DESKTOP-BKSDDJC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    44 |
+| Unused register locations in slices containing registers |    18 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|      6 |            1 |
+|    16+ |           42 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            2 |
+| No           | No                    | Yes                    |             268 |           63 |
+| No           | Yes                   | No                     |              92 |           12 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            2178 |          560 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+--------------------------------------------------------------------------------------------+--------------------------+------------------+----------------+
+|      Clock Signal      |                                        Enable Signal                                       |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
++------------------------+--------------------------------------------------------------------------------------------+--------------------------+------------------+----------------+
+|  CLK5MHZ/inst/clk_out1 |                                                                                            |                          |                2 |              4 |
+|  CLK500HZ/CLK          |                                                                                            | rst_IBUF                 |                2 |              6 |
+|  CLK5HZ/Q              | ddu/mem_addr[7]_i_1_n_0                                                                    | rst_IBUF                 |                2 |             16 |
+|  CLK5HZ/Q              | ddu/reg_addr[4]_i_1_n_0                                                                    | rst_IBUF                 |                4 |             22 |
+|  CLK5MHZ/inst/clk_out1 |                                                                                            | CLK500HZ/cnt[0]_i_1_n_0  |                6 |             46 |
+|  CLK5MHZ/inst/clk_out1 |                                                                                            | CLK5HZ/cnt[0]_i_1__0_n_0 |                6 |             46 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[5][31][0]                                                                    | rst_IBUF                 |               14 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/E[0]                                                                                | rst_IBUF                 |               25 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[10][31][0]                                                                   | rst_IBUF                 |                9 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[13][31][0]                                                                   | rst_IBUF                 |               16 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[14][31][0]                                                                   | rst_IBUF                 |               18 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[15][31][0]                                                                   | rst_IBUF                 |               19 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[21][31][0]                                                                   | rst_IBUF                 |               15 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[12][31][0]                                                                   | rst_IBUF                 |               21 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[16][31][0]                                                                   | rst_IBUF                 |               15 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[11][31][0]                                                                   | rst_IBUF                 |               12 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[20][31][0]                                                                   | rst_IBUF                 |               14 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[25][31][0]                                                                   | rst_IBUF                 |               13 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[26][31][0]                                                                   | rst_IBUF                 |               15 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[27][31][0]                                                                   | rst_IBUF                 |               13 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[28][31][0]                                                                   | rst_IBUF                 |               21 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[29][31][0]                                                                   | rst_IBUF                 |               18 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[2][31][0]                                                                    | rst_IBUF                 |               13 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[17][31][0]                                                                   | rst_IBUF                 |               14 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[18][31][0]                                                                   | rst_IBUF                 |               17 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[19][31][0]                                                                   | rst_IBUF                 |               15 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[1][31][0]                                                                    | rst_IBUF                 |               18 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[22][31][0]                                                                   | rst_IBUF                 |               19 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[23][31][0]                                                                   | rst_IBUF                 |               20 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[24][31][0]                                                                   | rst_IBUF                 |               15 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[3][31][0]                                                                    | rst_IBUF                 |               17 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[6][31][0]                                                                    | rst_IBUF                 |               18 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[7][31][0]                                                                    | rst_IBUF                 |               23 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[9][31][0]                                                                    | rst_IBUF                 |               20 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[4][31][0]                                                                    | rst_IBUF                 |               11 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[8][31][0]                                                                    | rst_IBUF                 |               19 |             64 |
+|  cpu_clock_BUFG        | cpu/IR/rf_reg[30][31][0]                                                                   | rst_IBUF                 |               19 |             64 |
+|  cpu_clock_BUFG        | cpu/SM/out_reg[31]_1                                                                       | rst_IBUF                 |               16 |             76 |
+|  cpu_clock_BUFG        | cpu/SM/E[0]                                                                                | rst_IBUF                 |               22 |             80 |
+|  cpu_clock_BUFG        | cpu/mem/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_0_2_i_1_n_0    |                          |               11 |             88 |
+|  cpu_clock_BUFG        | cpu/mem/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_192_255_0_2_i_1_n_0 |                          |               11 |             88 |
+|  cpu_clock_BUFG        | cpu/mem/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_128_191_0_2_i_1_n_0 |                          |               11 |             88 |
+|  cpu_clock_BUFG        | cpu/mem/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2_i_1_n_0  |                          |               11 |             88 |
+|  cpu_clock_BUFG        |                                                                                            | rst_IBUF                 |               61 |            262 |
++------------------------+--------------------------------------------------------------------------------------------+--------------------------+------------------+----------------+
+
+
