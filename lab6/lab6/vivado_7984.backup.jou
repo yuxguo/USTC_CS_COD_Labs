@@ -1,0 +1,217 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May 29 18:25:14 2019
+# Process ID: 7984
+# Current directory: D:/gyx_uni/2_spring/cod/lab/lab6/lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11840 D:\gyx_uni\2_spring\cod\lab\lab6\lab6\lab6.xpr
+# Log file: D:/gyx_uni/2_spring/cod/lab/lab6/lab6/vivado.log
+# Journal file: D:/gyx_uni/2_spring/cod/lab/lab6/lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.xpr
+close [ open D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/B_Data_Decode.v w ]
+add_files D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/B_Data_Decode.v
+close [ open D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/B_Data_Encode.v w ]
+add_files D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/B_Data_Encode.v
+close [ open D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Ascii2Hex.v w ]
+add_files D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Ascii2Hex.v
+close [ open D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Hex2Ascii.v w ]
+add_files D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Hex2Ascii.v
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+refresh_design
+close_design
+synth_design -rtl -name rtl_1
+refresh_design
+refresh_design
+close_design
+export_ip_user_files -of_objects  [get_files D:/gyx_uni/2_spring/cod/lab/lab6/lab6/inst_rom.coe] -no_script -reset -force -quiet
+remove_files  D:/gyx_uni/2_spring/cod/lab/lab6/lab6/inst_rom.coe
+set_property -dict [list CONFIG.coefficient_file {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/my_code.coe}] [get_ips MEM]
+generate_target all [get_files  D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/ip/MEM/MEM.xci]
+catch { config_ip_cache -export [get_ips -all MEM] }
+export_ip_user_files -of_objects [get_files D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/ip/MEM/MEM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/ip/MEM/MEM.xci]
+launch_runs -jobs 4 MEM_synth_1
+wait_on_run MEM_synth_1
+export_simulation -of_objects [get_files D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/ip/MEM/MEM.xci] -directory D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.ip_user_files/sim_scripts -ip_user_files_dir D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.ip_user_files -ipstatic_source_dir D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.cache/compile_simlib/modelsim} {questa=D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.cache/compile_simlib/questa} {riviera=D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.cache/compile_simlib/riviera} {activehdl=D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs clk_wiz_0_synth_1]
+set_property needs_refresh false [get_runs MEM_synth_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+synth_design -rtl -name rtl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close_design
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.runs/impl_1/TOP.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+set_property -dict [list CONFIG.coefficient_file {D:/gyx_uni/2_spring/cod/lab/lab6/lab6/my_code.coe}] [get_ips MEM]
+generate_target all [get_files  D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/ip/MEM/MEM.xci]
+catch { config_ip_cache -export [get_ips -all MEM] }
+export_ip_user_files -of_objects [get_files D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/ip/MEM/MEM.xci] -no_script -sync -force -quiet
+reset_run MEM_synth_1
+launch_runs -jobs 4 MEM_synth_1
+wait_on_run MEM_synth_1
+export_simulation -of_objects [get_files D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/ip/MEM/MEM.xci] -directory D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.ip_user_files/sim_scripts -ip_user_files_dir D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.ip_user_files -ipstatic_source_dir D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.cache/compile_simlib/modelsim} {questa=D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.cache/compile_simlib/questa} {riviera=D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.cache/compile_simlib/riviera} {activehdl=D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs clk_wiz_0_synth_1]
+set_property needs_refresh false [get_runs MEM_synth_1]
