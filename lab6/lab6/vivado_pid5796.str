@@ -1,0 +1,490 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 5796
+License: Customer
+
+Current time: 	Sat Jun 01 14:04:27 CST 2019
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 113 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	65767
+User home directory: C:/Users/65767
+User working directory: D:/gyx_uni/2_spring/cod/lab/lab6/lab6
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/xilinx/Vivado
+HDI_APPROOT: D:/xilinx/Vivado/2018.2
+RDI_DATADIR: D:/xilinx/Vivado/2018.2/data
+RDI_BINDIR: D:/xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/65767/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/65767/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/65767/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/gyx_uni/2_spring/cod/lab/lab6/lab6/vivado.log
+Vivado journal file location: 	D:/gyx_uni/2_spring/cod/lab/lab6/lab6/vivado.jou
+Engine tmp dir: 	D:/gyx_uni/2_spring/cod/lab/lab6/lab6/.Xil/Vivado-5796-GyxPC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/xilinx/Vivado/2018.2
+XILINX_SDK: D:/xilinx/SDK/2018.2
+XILINX_VIVADO: D:/xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	153 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 515 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: D:\gyx_uni\2_spring\cod\lab\lab6\lab6\lab6.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 64 MB (+64193kb) [00:00:08]
+// [Engine Memory]: 495 MB (+367221kb) [00:00:08]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 82 MB (+16398kb) [00:00:11]
+// [Engine Memory]: 545 MB (+26590kb) [00:00:11]
+// [Engine Memory]: 575 MB (+2688kb) [00:00:14]
+// Tcl Message: open_project D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 576 MB. GUI used memory: 45 MB. Current time: 6/1/19 2:04:32 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 769.910 ; gain = 103.617 
+// Project name: lab6; location: D:/gyx_uni/2_spring/cod/lab/lab6/lab6; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 1131 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (ck): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (ck)
+// TclEventType: ELABORATE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 603 MB. GUI used memory: 45 MB. Current time: 6/1/19 2:23:29 PM CST
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: TOP 
+// [Engine Memory]: 678 MB (+78276kb) [00:19:14]
+// [Engine Memory]: 830 MB (+124145kb) [00:19:19]
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// [Engine Memory]: 1,041 MB (+177656kb) [00:19:29]
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,044 MB. GUI used memory: 44 MB. Current time: 6/1/19 2:23:47 PM CST
+// [Engine Memory]: 1,100 MB (+7110kb) [00:19:31]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 880.301 ; gain = 87.359 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: 	Parameter IRQ bound to: 3'b101  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'Input_Ctrl' (6#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Input_Ctrl.v:23] INFO: [Synth 8-6157] synthesizing module 'Input_Ctrl__parameterized0' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Input_Ctrl.v:23] 
+// Tcl Message: 	Parameter IRQ bound to: 3'b110  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'Input_Ctrl__parameterized0' (6#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Input_Ctrl.v:23] INFO: [Synth 8-6157] synthesizing module 'Input_Ctrl__parameterized1' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Input_Ctrl.v:23] 
+// Tcl Message: 	Parameter IRQ bound to: 3'b111  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'Input_Ctrl__parameterized1' (6#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Input_Ctrl.v:23] INFO: [Synth 8-6157] synthesizing module 'Input_Ctrl__parameterized2' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Input_Ctrl.v:23] 
+// Tcl Message: 	Parameter IRQ bound to: 3'b010  
+// Tcl Message: 	Parameter cycles bound to: 4999999 - type: integer  	Parameter LED_RefreshCycles bound to: 4999999 - type: integer  	Parameter LED_IO_In_Mem bound to: 119 - type: integer  	Parameter LED_IRQ bound to: 3'b011  	Parameter point bound to: 20000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'LED_Ctrl' (11#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/LED_Ctrl.v:22] INFO: [Synth 8-6157] synthesizing module 'LED_Display' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/LED_Display.v:23] INFO: [Synth 8-155] case statement is not full and has no default [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/LED_Display.v:91] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'LED_Display' (12#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/LED_Display.v:23] INFO: [Synth 8-6155] done synthesizing module 'LED_driver' (13#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/LED_driver.v:23] INFO: [Synth 8-6157] synthesizing module 'Score_Driver' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Score_Driver.v:23] INFO: [Synth 8-6157] synthesizing module 'Score_Ctrl' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Score_Ctrl.v:23] 
+// Tcl Message: 	Parameter cycles bound to: 4999999 - type: integer  	Parameter SEG_IO_In_Mem bound to: 117 - type: integer  	Parameter SEG_IRQ bound to: 3'b100  	Parameter SEG_RefreshCycles bound to: 4999999 - type: integer  	Parameter point bound to: 10002 - type: integer  
+// Tcl Message: 	Parameter II bound to: 3'b001  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'Bluetooth_WPriority' (19#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Bluetooth_Priority.v:23] INFO: [Synth 8-6157] synthesizing module 'Bluetooth_Driver' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Bluetooth_Driver.v:23] 
+// Tcl Message: 	Parameter Bluetooth_Handler bound to: 3'b001  	Parameter Bluetooth_IO bound to: 118 - type: integer  	Parameter wait_cycles bound to: 9999 - type: integer  	Parameter ok_cycles bound to: 100 - type: integer  	Parameter II bound to: 3'b000  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'Bluetooth_ReceiveData' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Bluetooth_ReceiveData.v:23] 
+// Tcl Message: 	Parameter LENTH bound to: 39 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'Bluetooth_ReceiveData' (20#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Bluetooth_ReceiveData.v:23] INFO: [Synth 8-6157] synthesizing module 'B_Data_Decode' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/B_Data_Decode.v:23] 
+// Tcl Message: 	Parameter m bound to: 8'b01101101  	Parameter r bound to: 8'b01110010  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'Ascii2Hex' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Ascii2Hex.v:23] INFO: [Synth 8-6155] done synthesizing module 'Ascii2Hex' (21#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Ascii2Hex.v:23] INFO: [Synth 8-6155] done synthesizing module 'B_Data_Decode' (22#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/B_Data_Decode.v:23] INFO: [Synth 8-6157] synthesizing module 'Bluetooth_TransmitData' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Bluetooth_TransmitData.v:23] 
+// Tcl Message: 	Parameter LENTH bound to: 79 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'Register' (27#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Register.v:23] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'Control_Unit' (31#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Control_Unit.v:23] INFO: [Synth 8-6157] synthesizing module 'Reg_File' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Reg_File.v:23] INFO: [Synth 8-6155] done synthesizing module 'Reg_File' (32#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Reg_File.v:23] INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/ALU.v:23] 
+// Tcl Message: 	Parameter AND bound to: 4'b0000  	Parameter OR bound to: 4'b0001  	Parameter ADD bound to: 4'b0010  	Parameter SUB bound to: 4'b0110  	Parameter SLT bound to: 4'b0111  	Parameter NOR bound to: 4'b1100  	Parameter XOR bound to: 4'b1101  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ALU' (33#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/ALU.v:23] INFO: [Synth 8-6157] synthesizing module 'SignExtend_Unit' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/SignExtend_Unit.v:23] INFO: [Synth 8-6155] done synthesizing module 'SignExtend_Unit' (34#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/SignExtend_Unit.v:23] INFO: [Synth 8-6157] synthesizing module 'Interrupt_Dst' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Interrupt_Dst.v:23] 
+// Tcl Message: 	Parameter Dir1 bound to: 80 - type: integer  	Parameter Dir2 bound to: 109 - type: integer  	Parameter Dir3 bound to: 43 - type: integer  	Parameter Dir4 bound to: 78 - type: integer  	Parameter Dir5 bound to: 88 - type: integer  	Parameter Dir6 bound to: 95 - type: integer  	Parameter Dir7 bound to: 102 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'Evaluate_Interrupt' (38#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/Evaluate_Interrupt.v:23] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'CPU' (39#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/CPU.v:23] INFO: [Synth 8-6157] synthesizing module 'DDU' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/DDU.v:23] INFO: [Synth 8-6155] done synthesizing module 'DDU' (40#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/DDU.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'MEM' [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/.Xil/Vivado-5796-GyxPC/realtime/MEM_stub.v:6] INFO: [Synth 8-6155] done synthesizing module 'MEM' (41#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/.Xil/Vivado-5796-GyxPC/realtime/MEM_stub.v:6] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'TOP' (42#1) [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/new/TOP.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 937.762 ; gain = 144.820 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 937.762 ; gain = 144.820 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 937.762 ; gain = 144.820 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint 'd:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'CLK5MHZ' INFO: [Project 1-454] Reading design checkpoint 'd:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/ip/MEM/MEM.dcp' for cell 'Mem' INFO: [Netlist 29-17] Analyzing 1282 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'CLK5MHZ/inst' Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'CLK5MHZ/inst' Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'CLK5MHZ/inst' Finished Parsing XDC File [d:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'CLK5MHZ/inst' 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. INFO: [Timing 38-2] Deriving generated clocks 
+// Tcl Message: Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/constrs_1/new/nexys4.xdc] Finished Parsing XDC File [D:/gyx_uni/2_spring/cod/lab/lab6/lab6/lab6.srcs/constrs_1/new/nexys4.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary:   A total of 1024 instances were transformed.   RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 1024 instances  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1340.160 ; gain = 547.219 
+// Tcl Message: 104 Infos, 76 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1340.160 ; gain = 551.348 
+// [GUI Memory]: 88 MB (+1590kb) [00:19:33]
+// 'dP' command handler elapsed time: 22 seconds
+// [Engine Memory]: 1,156 MB (+316kb) [00:19:34]
+// Elapsed time: 21 seconds
+dismissDialog("Open Elaborated Design"); // bx (ck)
+// [GUI Memory]: 93 MB (+910kb) [00:19:53]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,169 MB. GUI used memory: 82 MB. Current time: 6/1/19 2:25:49 PM CST
+// Elapsed time: 119 seconds
+floatView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_SCHEMATIC: Schematic: float view
+maximizeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, aG)
+// [GUI Memory]: 102 MB (+3979kb) [00:21:40]
+// [GUI Memory]: 120 MB (+13174kb) [00:21:40]
+// [GUI Memory]: 127 MB (+1297kb) [00:28:07]
+// [GUI Memory]: 134 MB (+563kb) [00:37:33]
+// [GUI Memory]: 141 MB (+233kb) [00:49:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,201 MB. GUI used memory: 72 MB. Current time: 6/1/19 2:55:50 PM CST
+// PAPropertyPanels.initPanels (IRD_we) elapsed time: 0.3s
+// Elapsed time: 2327 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, aG)
+// Elapsed time: 833 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), CLK5MHZ : clk_wiz_0 (clk_wiz_0.xci)]", 2); // B (D, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), CLK5MHZ : clk_wiz_0 (clk_wiz_0.xci)]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), cpu : CPU (CPU.v)]", 15); // B (D, ck)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), cpu : CPU (CPU.v), IRD : Interrupt_Dst (Interrupt_Dst.v)]", 33, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), cpu : CPU (CPU.v), IRD : Interrupt_Dst (Interrupt_Dst.v)]", 33, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("Interrupt_Dst.v", 1, 29); // ce (w, ck)
+typeControlKey((HResource) null, "Interrupt_Dst.v", 'c'); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), cpu : CPU (CPU.v), IRC : Interrupt_Ctrl (Interrupt_Ctrl.v)]", 35, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), cpu : CPU (CPU.v), IRC : Interrupt_Ctrl (Interrupt_Ctrl.v)]", 35, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Interrupt_Ctrl.v", 0, 176); // ce (w, ck)
+selectCodeEditor("Interrupt_Ctrl.v", 175, 476); // ce (w, ck)
+typeControlKey((HResource) null, "Interrupt_Ctrl.v", 'c'); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), cpu : CPU (CPU.v), IRF : Interrupt_flag (Interrupt_flag.v)]", 36, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), cpu : CPU (CPU.v), EvaIR : Evaluate_Interrupt (Evaluate_Interrupt.v)]", 37, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), cpu : CPU (CPU.v), EvaIR : Evaluate_Interrupt (Evaluate_Interrupt.v)]", 37, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Evaluate_Interrupt.v", 3, 195); // ce (w, ck)
+typeControlKey((HResource) null, "Evaluate_Interrupt.v", 'c'); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), cpu : CPU (CPU.v), IRF : Interrupt_flag (Interrupt_flag.v)]", 36, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), cpu : CPU (CPU.v), IRF : Interrupt_flag (Interrupt_flag.v)]", 36, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Interrupt_flag.v", 6, 142); // ce (w, ck)
+selectCodeEditor("Interrupt_flag.v", 0, 136); // ce (w, ck)
+typeControlKey((HResource) null, "Interrupt_flag.v", 'c'); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,201 MB. GUI used memory: 75 MB. Current time: 6/1/19 3:25:50 PM CST
+// Elapsed time: 553 seconds
+maximizeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, aG)
+// Elapsed time: 301 seconds
+selectCodeEditor("Interrupt_flag.v", 489, 361); // ce (w, ck)
+// Elapsed time: 30 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), cpu : CPU (CPU.v)]", 15); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), LD : LED_driver (LED_driver.v)]", 9, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), LD : LED_driver (LED_driver.v)]", 9); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), LD : LED_driver (LED_driver.v), U1 : LED_Ctrl (LED_Ctrl.v)]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), LD : LED_driver (LED_driver.v)]", 9, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), LD : LED_driver (LED_driver.v)]", 9, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("LED_driver.v", 36, 313); // ce (w, ck)
+selectCodeEditor("LED_driver.v", 1, 220); // ce (w, ck)
+typeControlKey((HResource) null, "LED_driver.v", 'c'); // ce (w, ck)
+// Elapsed time: 17 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), LD : LED_driver (LED_driver.v)]", 9); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), LD : LED_driver (LED_driver.v), U1 : LED_Ctrl (LED_Ctrl.v)]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), LD : LED_driver (LED_driver.v), U1 : LED_Ctrl (LED_Ctrl.v)]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("LED_Ctrl.v", 0, 68); // ce (w, ck)
+typeControlKey((HResource) null, "LED_Ctrl.v", 'c'); // ce (w, ck)
+selectCodeEditor("LED_Ctrl.v", 382, 318); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), LD : LED_driver (LED_driver.v), U2 : LED_Display (LED_Display.v)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), LD : LED_driver (LED_driver.v), U2 : LED_Display (LED_Display.v)]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("LED_Display.v", 1, 256); // ce (w, ck)
+typeControlKey((HResource) null, "LED_Display.v", 'c'); // ce (w, ck)
+// Elapsed time: 253 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), LD : LED_driver (LED_driver.v)]", 9, true); // B (D, ck) - Node
+// Elapsed time: 55 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), LD : LED_driver (LED_driver.v)]", 9); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), SD : Score_Driver (Score_Driver.v)]", 10, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), SD : Score_Driver (Score_Driver.v)]", 10, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("Score_Driver.v", 3, 143); // ce (w, ck)
+typeControlKey((HResource) null, "Score_Driver.v", 'c'); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), SD : Score_Driver (Score_Driver.v), U1 : Score_Ctrl (Score_Ctrl.v)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), SD : Score_Driver (Score_Driver.v), U1 : Score_Ctrl (Score_Ctrl.v)]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Score_Ctrl.v", 2, 313); // ce (w, ck)
+selectCodeEditor("Score_Ctrl.v", 140, 470); // ce (w, ck)
+typeControlKey((HResource) null, "Score_Ctrl.v", 'c'); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), SD : Score_Driver (Score_Driver.v), U2 : bcd_decoder (bcd_decoder.v)]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), SD : Score_Driver (Score_Driver.v), U2 : bcd_decoder (bcd_decoder.v)]", 12, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("bcd_decoder.v", 4, 255); // ce (w, ck)
+selectCodeEditor("bcd_decoder.v", 0, 143); // ce (w, ck)
+typeControlKey((HResource) null, "bcd_decoder.v", 'c'); // ce (w, ck)
+// Elapsed time: 566 seconds
+selectCodeEditor("bcd_decoder.v", 355, 88); // ce (w, ck)
+// Elapsed time: 63 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), SD : Score_Driver (Score_Driver.v)]", 10); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), IPD : Input_Driver (Input_Driver.v)]", 7, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), IPD : Input_Driver (Input_Driver.v)]", 7, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("Input_Driver.v", 3, 203); // ce (w, ck)
+typeControlKey((HResource) null, "Input_Driver.v", 'c'); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), IPD : Input_Driver (Input_Driver.v), U0 : Input_Ctrl (Input_Ctrl.v)]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), IPD : Input_Driver (Input_Driver.v), U : Input_Priority (Input_Priority.v)]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), IPD : Input_Driver (Input_Driver.v), U : Input_Priority (Input_Priority.v)]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), IPD : Input_Driver (Input_Driver.v), U : Input_Priority (Input_Priority.v)]", 12, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Input_Priority.v", 0, 141); // ce (w, ck)
+typeControlKey((HResource) null, "Input_Priority.v", 'c'); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), IPD : Input_Driver (Input_Driver.v), U3 : Input_Ctrl (Input_Ctrl.v)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), IPD : Input_Driver (Input_Driver.v), U3 : Input_Ctrl (Input_Ctrl.v)]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Input_Ctrl.v", 2, 142); // ce (w, ck)
+typeControlKey((HResource) null, "Input_Ctrl.v", 'c'); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("Input_Ctrl.v", 746, 148); // ce (w, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), IPD : Input_Driver (Input_Driver.v)]", 7); // B (D, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,201 MB. GUI used memory: 82 MB. Current time: 6/1/19 3:55:50 PM CST
+// Elapsed time: 441 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "Schematic_zoom_fit"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// Elapsed time: 10 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "Schematic_zoom_fit"); // B (f, aG)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+// Elapsed time: 15 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, aG)
+// Elapsed time: 129 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), BLD : Bluetooth_Driver (Bluetooth_Driver.v)]", 14, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), BLD : Bluetooth_Driver (Bluetooth_Driver.v)]", 14, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("Bluetooth_Driver.v", 2, 198); // ce (w, ck)
+typeControlKey((HResource) null, "Bluetooth_Driver.v", 'c'); // ce (w, ck)
+selectCodeEditor("Bluetooth_Driver.v", 347, 167); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), BLD : Bluetooth_Driver (Bluetooth_Driver.v), BRD : Bluetooth_ReceiveData (Bluetooth_ReceiveData.v)]", 15, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), BLD : Bluetooth_Driver (Bluetooth_Driver.v), BRD : Bluetooth_ReceiveData (Bluetooth_ReceiveData.v)]", 15, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Bluetooth_ReceiveData.v", 0, 140); // ce (w, ck)
+typeControlKey((HResource) null, "Bluetooth_ReceiveData.v", 'c'); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), BLD : Bluetooth_Driver (Bluetooth_Driver.v), BTD : Bluetooth_TransmitData (Bluetooth_TransmitData.v)]", 17, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), BLD : Bluetooth_Driver (Bluetooth_Driver.v), BTD : Bluetooth_TransmitData (Bluetooth_TransmitData.v)]", 17, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Bluetooth_TransmitData.v", 4, 311); // ce (w, ck)
+selectCodeEditor("Bluetooth_TransmitData.v", 2, 313); // ce (w, ck)
+typeControlKey((HResource) null, "Bluetooth_TransmitData.v", 'c'); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), BLD : Bluetooth_Driver (Bluetooth_Driver.v), BDD : B_Data_Decode (B_Data_Decode.v)]", 16, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), BLD : Bluetooth_Driver (Bluetooth_Driver.v), BDD : B_Data_Decode (B_Data_Decode.v)]", 16, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), BLD : Bluetooth_Driver (Bluetooth_Driver.v), BDD : B_Data_Decode (B_Data_Decode.v)]", 16, true); // B (D, ck) - Node
+selectCodeEditor("B_Data_Decode.v", 0, 313); // ce (w, ck)
+typeControlKey((HResource) null, "B_Data_Decode.v", 'c'); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), BLD : Bluetooth_Driver (Bluetooth_Driver.v), BDE : B_Data_Encode (B_Data_Encode.v)]", 21, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), BLD : Bluetooth_Driver (Bluetooth_Driver.v), BDE : B_Data_Encode (B_Data_Encode.v), U4 : Hex2Ascii (Hex2Ascii.v)]", 26, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("B_Data_Encode.v", 2, 239); // ce (w, ck)
+typeControlKey((HResource) null, "B_Data_Encode.v", 'c'); // ce (w, ck)
+// Elapsed time: 697 seconds
+selectCodeEditor("B_Data_Encode.v", 318, 239); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Input_Ctrl.v", 13); // k (j, ck)
+// Elapsed time: 12 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), BLD : Bluetooth_Driver (Bluetooth_Driver.v)]", 14); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), IRQH : IRQ_Handler (IRQ_Handler.v)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.v), IRQH : IRQ_Handler (IRQ_Handler.v)]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("IRQ_Handler.v", 3, 254); // ce (w, ck)
+typeControlKey((HResource) null, "IRQ_Handler.v", 'c'); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,201 MB. GUI used memory: 86 MB. Current time: 6/1/19 4:25:51 PM CST
+// Elapsed time: 1389 seconds
+selectCodeEditor("IRQ_Handler.v", 829, 250); // ce (w, ck)
+selectCodeEditor("IRQ_Handler.v", 280, 483); // ce (w, ck)
+typeControlKey((HResource) null, "IRQ_Handler.v", 'v'); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("IRQ_Handler.v", 135, 482); // ce (w, ck)
+selectCodeEditor("IRQ_Handler.v", 123, 460); // ce (w, ck)
+selectCodeEditor("IRQ_Handler.v", 108, 485); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("IRQ_Handler.v", 69, 446); // ce (w, ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 21 seconds
+selectCodeEditor("IRQ_Handler.v", 120, 83); // ce (w, ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("IRQ_Handler.v", 116, 439); // ce (w, ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// PAResourceOtoP.PAViews_SCHEMATIC: Schematic: close view
+// Elapsed time: 833 seconds
+closeFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // aw (aE, aG)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+// HMemoryUtils.trashcanNow. Engine heap size: 1,201 MB. GUI used memory: 82 MB. Current time: 6/1/19 4:55:51 PM CST
